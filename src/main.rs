@@ -1,3 +1,6 @@
+mod format;
+
 fn main() {
-    println!("Hello, world!");
+    format::define::format_test();
 }
+
