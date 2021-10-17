@@ -9,7 +9,7 @@ pub struct HardTack {
 
 impl HardTack {
     fn get_uuid(&self) -> String { 
-        self.timestamp.to_string() + &self.salt.to_string()
+        self.timestamp.to_string() + "-" + &self.salt.to_string()
     }
 }
 pub struct Tack {
@@ -40,5 +40,5 @@ fn test() {
         salt: random_salt,
         data: vec!()};
 
-    print!(h.get_uuid());
+    println!("{:?}", h.get_uuid());
 }
