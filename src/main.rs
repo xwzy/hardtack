@@ -13,3 +13,4 @@ fn write_hello() -> std::io::Result<()> {
 fn main() {
     write_hello();
 }
+
